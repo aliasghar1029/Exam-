@@ -1,0 +1,153 @@
+QUESTION 1 OF 12
+Chapter section: Concept 2, Give AI the Outcome, Not the Clicks
+Hira, a hostel bookings associate, needs a short list of free channel-manager tools for a 24-bed hostel by Friday. She types: “Look only at SiteOne and SiteTwo, copy the top three rated tools from each into a table, then tell me which is best.” The table looks neat. A colleague says several well-known free tools are listed elsewhere, and SiteTwo shows no ratings at all. Which change to the prompt is most appropriate?
+A. Describe the result in one sentence (“When this is done, I will have…”), add two limits, and let AI choose the sources.
+B. Keep the recipe but add two more named sites, so the sources cover the tools her colleague mentioned.
+C. Keep the recipe and add a line asking AI to double-check every rating before it writes the table.
+D. Replace the recipe with a request for a long research report on the whole channel-manager market.
+Correct Answer: Option A
+Explanation (Roman Urdu): Hira ka recipe AI ko sirf do sites tak band kar raha hai, aur “highest-rated” wahan se aaya jahan rating hi nahi thi. Isliye fix yeh hai ke outcome likho aur sources AI par chhor do, kyunke tab AI wahan bhi dekhta hai jahan behtareen options hain. B ghalat hai kyunke naye sites bhi tumhara hi plan hain, sirf bada kiya hai. C ghalat hai kyunke checking end ka kaam hai, lekin recipe ki limit usse khatam nahi hoti. D ghalat hai kyunke deep research report un jobs ke liye hai jinka deliverable report ho, yahan masla bohat chhota hai.
+Yaad rakhne wala rule: Clicks mat likho, outcome likho; plan tumhara hua to limit bhi tumhari hai.
+
+QUESTION 2 OF 12
+Chapter section: Concept 3, the Delegation Brief (Authority line)
+Dev, a carpentry estimator, wrote a brief with Outcome, Context, Constraints and Deliverable lines for a 14-step staircase quote saved as quote_v3.xlsx. Claude returned a good summary, but it had quietly priced a cheaper timber grade for the stringers. Dev only found out when the customer asked about it. Nothing in the result said a choice had been made. Which pattern is this, and what is the fix?
+A. Verification line missing; add a line telling AI to mark every material “unverified” until the supplier confirms.
+B. Authority line missing; say what AI may decide alone and require it to say whenever it chose something.
+C. Constraints line too thin; add “use only grade A timber” to this one brief and rerun it.
+D. Deliverable line missing; ask for a table with one column per material so choices become visible.
+Correct Answer: Option B
+Explanation (Roman Urdu): Asal masla yeh hai ke AI ne ek decision khamoshi se khud le liya aur Dev ko pata hi nahi chala. Authority line ka kaam yehi hai ke batao AI kya akela decide kare aur kab bataye ke us ne choose kiya. A adha sahi hai, verification baad mein pakarne mein madad karta hai magar silent decision ki wajah nahi hata’ta. C sirf is ek symptom ka ilaaj hai, agli baar koi aur decision silent ho sakta hai. D form ki baat hai, decision ke ikhtiyar ki nahi.
+Yaad rakhne wala rule: Authority line na ho to AI chup chaap faisle karta hai; faisla chalega, magar batana zaroori hai.
+
+QUESTION 3 OF 12 SELECT TWO
+Chapter section: Concept 4, Give AI Something to Research
+Nadia, a restaurant manager, asks AI for the current wholesale price of three olive oils. She gets a tidy table headed “based on current prices”, with no links and no page dates. She must place the order at 9 a.m. tomorrow, and the supplier accepts no returns. The restaurant’s menu uses a green logo. Which TWO requests are most appropriate?
+A. Accept the table, because the answer itself says the prices are current.
+B. Ask for a source link and page date for each price, with any price it cannot source marked “unverified”.
+C. Open one of the pages herself, find the sentence that shows the price, and check the date on the page.
+D. Switch on a deep research mode, because checking three prices needs many pages read over several minutes.
+Correct Answer: Option B and C
+Explanation (Roman Urdu): Prices bina source ke aayen to yeh nahi maan sakte ke AI ne search kiya, aur order wapas nahi hota, isliye B (source aur date maangna) aur C (khud ek page kholna) dono zaroori hain. A ghalat hai kyunke “current” likhna evidence nahi, sirf hint hai. D ghalat hai kyunke deep research mode report jaisi job ke liye hai, teen prices ke liye bohat bara qadam hai aur phir bhi tum khud check nahi karti.
+Yaad rakhne wala rule: Source ke baghair current claim par yaqeen nahi; citation maango, phir khud kholo aur date dekho.
+
+QUESTION 4 OF 12 SELECT TWO
+Chapter section: Concept 5, Give AI the Source
+Imran works at a welfare trust. He pastes a two-page notice from a district office and asks for the three conditions a family must meet to receive winter aid. The answer lists three conditions, but he cannot tell which come from the notice and which AI added from other schemes. He has already removed the applicants’ names. Which TWO changes to the prompt are most appropriate?
+A. Tell AI to use only the pasted text.
+B. Tell AI to also draw on similar aid schemes it knows, so the list is more complete.
+C. Turn on web search so AI can confirm that the notice is still current.
+D. Ask AI to quote the sentence behind each condition and write “not in the source” where the text is silent.
+Correct Answer: Option A and D
+Explanation (Roman Urdu): Source ko source banane ke liye do hi cheezen chahiye: “sirf is text se jawab do” aur “jis jumle se liya woh quote karo, na mile to not in the source likho”. Is se Imran har condition ko notice mein dhoondh sakta hai. B ghalat hai kyunke dusri schemes mila kar wohi mixing hoti hai jo masla hai. C ghalat hai kyunke source tum de chuke ho, search se AI aur cheezen mila dega aur sawal alag ho jayega.
+Yaad rakhne wala rule: “Using only the text” aur “quote the sentence” do instructions hain jo paste kiye text ko source banate hain.
+
+QUESTION 5 OF 12
+Chapter section: Concept 6, Ask for the Deliverable, Not an Answer
+Lena, a subtitling studio producer, has a chat table of three transcription vendors with two prices marked “unverified” and one marked “may change”. She asks AI to turn it into a one-page document for a client, and the quote goes out at noon. The document looks tidy but shows only one caveat. AI says “all caveats kept”. What is the most appropriate next step?
+A. Rely on AI’s statement that every caveat was kept, since the document otherwise matches the table.
+B. Ask AI to shorten the document so the one remaining caveat stands out more to the client.
+C. Count caveats in both herself, restore what was dropped, and add a keep-every-unverified-mark rule to the Deliverable line.
+D. Run the whole brief again in a new chat and hope the caveats appear in the new document.
+Correct Answer: Option C
+Explanation (Roman Urdu): Deliverable mein caveats gum ho jate hain kyunke tidy document yehi chahta hai, is liye chat aur document ke caveats khud gino aur jo gaye wapas rakho. Saath mein Deliverable line mein “keep every unverified mark” likhna agli dafa bhi bachata hai. A ghalat hai kyunke “maine kar diya” AI ka bayan hai, result nahi; result dekhna hota hai. B ghalat hai kyunke chhota karne se caveats ghatenge, barhenge nahi. D ghalat hai kyunke naya chat dobara wohi risk laata hai aur check nahi hota.
+Yaad rakhne wala rule: Chat ke caveats gino, document ke caveats gino; kam hon to wapas daalo.
+
+QUESTION 6 OF 12
+Chapter section: Concept 7, Decide How Much of the Job AI Owns (plan-first)
+Omar, an ice rink operations associate, is using AI for the first time on a job: compare three quotes for resurfacer maintenance and draft clarifying emails to the vendors. A past vendor mix-up cost the rink money. Nothing can be sent from the chat window, and the rink opens at 6 p.m. What is the most appropriate next step?
+A. Let AI run the whole job and review the draft emails afterwards, since nothing can be sent from a chat.
+B. Write out every step himself as a recipe, so AI cannot pick the wrong vendor to focus on.
+C. Give AI full authority for this run, since the emails are only drafts and he will read them anyway.
+D. Ask AI to list its planned steps and wait for his go-ahead, change one step, then say go.
+Correct Answer: Option D
+Explanation (Roman Urdu): Pehli dafa ka job hai aur galti mehengi pad chuki hai, to sab se sasta moment kaam shuru hone se pehle hai: plan padho, ek step badlo, phir “go” kaho. A ghalat hai kyunke galti run ke baad milti hai aur run ka kharcha ho chuka hota hai. B ghalat hai kyunke recipe tumhara plan hai, aur AI ko behtar raasta nahi dhoondne deta. C ghalat hai kyunke trust record se bantaa hai, pehli run par poora ikhtiyar dena nahi.
+Yaad rakhne wala rule: Pehli run mein plan pehle maango; plan padhna sasta hai, run dobara karna mehenga.
+
+QUESTION 7 OF 12
+Chapter section: Concept 8, Give AI the Job Again (Project, knowledge, standing instructions)
+Mehwish, a quality supervisor at a drinks bottler, summarises three supplier bulletins every Monday. This is the third week she is retyping the same plant background paragraph, the same supplier list PDF and the rule “mark anything you could not confirm as unverified”. Only the bulletins change each week, and she works on a shared lab laptop. How should she set this work up?
+A. Create a Project with the supplier list as knowledge and the rule as a standing instruction; paste each week’s bulletins into a chat inside it.
+B. Create a Project, save the rule as a knowledge file, and put each week’s bulletins in as standing instructions.
+C. Keep one long chat going and add each week’s bulletins to it, so the earlier background stays in view.
+D. Put the supplier list and the rule into AI’s own memory, and paste the bulletins in an ordinary chat outside the Project.
+Correct Answer: Option A
+Explanation (Roman Urdu): Teesri dafa retype karna Project ka signal hai: jo sources nahi badalte (supplier list) knowledge mein jate hain, aur jo rule nahi badalta (unverified wala) standing instruction mein, aur is hafte ke bulletins chat mein. B mein layers ulti hain, rule knowledge mein aur bulletins instructions mein. C ghalat hai kyunke lamba chat ek stream ka structure nahi deta aur rules khud se har chat mein nahi aate. D ghalat hai kyunke memory AI ki apni yaad hai, aur yeh kaam Project se hota hai.
+Yaad rakhne wala rule: Rules instructions mein, sources knowledge mein, aaj ka kaam chat mein.
+
+QUESTION 8 OF 12
+Chapter section: Concept 9, Intervene When AI Goes Wrong (the smallest move)
+Aisha, a language school admissions officer, asks AI for a table of three evening course offers with fee and duration. Everything matches the course pages except one fee: the table says 90 while the page says 120. Parents are expecting the table by 5 p.m. What is the most appropriate request?
+A. Restate the whole outcome from the start in a new chat with a longer brief.
+B. Name the wrong fee and the right one, ask for that line only to be corrected, then look at the table itself.
+C. Switch to a stronger model and run the whole job again from the beginning.
+D. Tell AI the job was wrong and change the requirement to a different set of courses.
+Correct Answer: Option B
+Explanation (Roman Urdu): Sirf ek fee ghalat hai, to sab se chhota move “Correct” hai: ghalti aur sahi value batao. Phir table khud dekho, kyunke “maine theek kar diya” ek jumla hai, table nahi. A aur C zaroorat se bade fix hain jab ek line ghalat thi. D ghalat hai kyunke job ghalat nahi thi, sirf ek fact ghalat tha.
+Yaad rakhne wala rule: Sab se chhota message jo kaam kare; aur fix result mein dekho, AI ke bayan mein nahi.
+
+QUESTION 9 OF 12
+Chapter section: Concept 10, Decide step (Reject: take the job back)
+Tariq works in a cement plant sales office. AI is summarising a volume-discount calculation that will go into a customer contract signed on Friday. He has corrected the summary three times, and each round improved it less than the last. He has already tried the stronger thinking setting. What is the most appropriate next step?
+A. Rewrite the prompt a fourth time with even more detail about the discount rules.
+B. Ask AI to review its own latest version and list the errors it sees.
+C. Take the job back and have a person who knows pricing work out the discounts.
+D. Move to a different free assistant and run the same brief again from scratch.
+Correct Answer: Option C
+Explanation (Roman Urdu): Teen corrections ke baad har round kam fayda de, to yeh prompt ka nahi job ka signal hai, aur Reject ka doosra roop hai ke ab aisa shakhs chahiye jo field jaanta ho. Contract ke figures mein galti ka nuqsan bara hai aur stronger setting pehle hi try ho chuki. A ghalat hai kyunke chauthi rewrite bhi kam fayda degi. B ghalat hai kyunke AI se apna hi kaam check karwana wohi weak checker hai. D ghalat hai kyunke machine badalna reviewer nahi badalta, aur masla wohi rahega.
+Yaad rakhne wala rule: Jab har round pehle se kam sudhare, message nahi, insaan badlo.
+
+QUESTION 10 OF 12 SELECT TWO
+Chapter section: Concept 10, Verify step: Identify (what matters enough to check)
+Sana, a zoo education officer, uses AI to draft a school-trip information sheet that will be printed and sent to 400 parents on Monday. The draft contains four items, listed below. She has already traced the species count to the zoo’s own page. Which TWO items should be on the must-check list before anything else?
+A. The per-child group ticket price stated in the table.
+B. The total species count, taken from the zoo’s own page that she traced.
+C. The line saying children under five may touch the reptiles.
+D. The order of the three activity sections on the sheet.
+Correct Answer: Option A and C
+Explanation (Roman Urdu): Identify ka matlab hai wahan check karo jahan galti ka nuqsan hai: price (paisa) aur bachon ke touch ka safety claim, aur sheet 400 parents ko jaa rahi hai (audience bara hai, wapas lena mushkil). B ghalat hai kyunke wo claim pehle hi zoo ke apne page se trace ho chuka hai. D ghalat hai kyunke sections ki tarteeb ka koi stakes ya safety asar nahi.
+Yaad rakhne wala rule: Prices, safety aur jo wapas na ho sake, pehle check karo; jo pehle trace ho chuka wo list se bahar.
+
+QUESTION 11 OF 12
+Chapter section: Concept 10, “Four things that never go out without a person” and accountability
+Raza, a hotel planning associate, had AI build revenue-projection formulas in a spreadsheet for next quarter’s board deck. It is the fifth similar job, the first four ran cleanly, and AI marked nothing as unverified this time. The board will use the totals to set a budget. Which request is most appropriate?
+A. Skip review, since a fifth clean run has earned trust for this type of job.
+B. Open a new chat and ask AI to audit the formulas of its own spreadsheet.
+C. Spot-check one total, since the other numbers follow from the same formulas.
+D. Ask a named colleague who knows the model to read the calculations before the deck goes out.
+Correct Answer: Option D
+Explanation (Roman Urdu): Financially material calculation un chaar cheezon mein se hai jo bina kisi named insaan ke review ke bahar nahi jati, chahe run kitni bhi saaf ho. Clean record AI ko milte-julte jobs deta hai, tumhara naam us par nahi lagata. A ghalat hai kyunke trust se review khatam nahi hota. B ghalat hai kyunke AI se apna kaam check karwana wrong checker hai. C ghalat hai kyunke ek total check karna bohat kamzor check hai is level ke stakes ke liye.
+Yaad rakhne wala rule: AI kaam kare to bhi accountability tumhari; paison wale calculation par named insaan zaroori hai.
+
+QUESTION 12 OF 12
+Chapter section: Concept 11, Same Job, Different AI
+Julia, a regional bus company timetable officer, ran the same six-line brief about this week’s route changes in two free assistants, unchanged. Both finished the job. The second needed four messages and returned the deliverable in a different layout, and neither marked anything unverified. Her manager asks which assistant the office should use “from now on”, and she has one hour. What is the most appropriate next step?
+A. Name the faster assistant the winner and write that into the record as the office’s choice.
+B. Record both runs side by side as observations from today and trace one claim in the second result.
+C. Rewrite the brief for each assistant using the names of its own buttons, so the two runs match.
+D. Run the brief a third time in the slower assistant until its output looks the same as the first.
+Correct Answer: Option B
+Explanation (Roman Urdu): Brief job ko describe karta hai, tool ko nahi, to wo bina rewrite ke chal gaya; ab sahi kaam hai aaj ki do runs ko observations ke taur par likhna aur doosre result par wohi trace method lagana. A ghalat hai kyunke models bohat tezi se badalte hain, aaj ka ranking kal sach nahi hota. C ghalat hai kyunke brief mein buttons ke naam hi nahi hone chahiye. D ghalat hai kyunke ek jaisa dikhna sahi hona nahi hai aur checking phir bhi baaki rehti hai.
+Yaad rakhne wala rule: Do runs ka record rakho, ranking nahi; verify wohi chaar steps se, assistant badle to bhi.
+
+Summary table
+Question	Chapter section tested	Type
+1	Concept 2: outcome, not clicks	Single
+2	Concept 3: Authority line in the brief	Single
+3	Concept 4: searched vs remembered; citation is not verification	Select two
+4	Concept 5: “using only the text” and quoting the source	Select two
+5	Concept 6: deliverables lose caveats	Single
+6	Concept 7: plan-first	Single
+7	Concept 8: Project, knowledge vs standing instructions	Single
+8	Concept 9: smallest Intervene move	Single
+9	Concept 10: Reject, take the job back	Single
+10	Concept 10: Identify, what to check first	Select two
+11	Concept 10: four things that never go out without a person	Single
+12	Concept 11: same job in a different AI	Single
+Questions to verify yourself
+Source mismatch: your prompt said the chapter is from “AI Fluency”, but the file you attached is “Just Delegate It: A Crash Course” (Foundations, Chapter 1). I used only that chapter. Some items you listed (Skills vs Memory, five prompt components, code execution for numbers, context overload) are not in it, so I did not test them.
+Q3: the chapter says deep research mode suits report deliverables, not a single fact. Option D is wrong based on that, but the chapter states it briefly.
+Q7: Option D (Memory) is wrong because the chapter prescribes Project knowledge and instructions for this case. It says little about Memory beyond monthly review, so check this one.
+Q9: the chapter’s “Reject” second form says a person who knows the field is the next move after repeated weak corrections. I added “already tried the stronger setting” to close off the escalate move.
+Q10: the chapter lists thresholds (stakes, reversibility, audience, regulatory exposure) but no safety-claim example. I treated the reptile-contact claim and the price as clearly crossing them.
+Q11: I treated “financially material calculations” as covering board-level budget figures. The chapter does not define the term further.
