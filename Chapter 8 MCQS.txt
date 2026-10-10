@@ -1,0 +1,263 @@
+Continuing through more signal-and-fix scenarios across industries.
+QUESTION 1 OF 12
+Chapter section: Part 2, Concept 7: Over-delegation and halo delegation
+At a drinks bottler, an accounts assistant has used Claude for three months to pull invoice number, supplier, amount and due date from scanned supplier invoices. A finance lead has checked the extraction and found it accurate every week. The team now proposes letting Claude also approve and release payments below Rs 50,000 without anyone looking. Released payments cannot be recalled, and the finance lead is on leave for two weeks. What is the most appropriate next step?
+A. Let Claude approve payments below the limit, because three months of accurate extraction shows it is reliable at this work.
+B. Keep extraction with Claude, and keep payment approval with a named person, because extraction accuracy says nothing about the approval decision.
+C. Add a second Claude pass that re-checks each approval before the payment is released, so two AI checks stand behind it.
+D. Move all invoice work back to humans until a full year of clean results has been recorded for every step.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke extraction ki accuracy sirf extraction ke baare mein saboot hai, approval ke faisle ke baare mein nahi. Payment release hone ke baad wapas nahi hoti, is liye yeh step human rehta hai aur extraction AI ke paas rehti hai. Option A halo delegation hai: pichhla step acha chala to agla bhi safe samajh liya. Option C mein dono checks AI ke hain, koi insaan jawab-deh nahi. Option D zarurat se bara fix hai, kyunke extraction ko wapas insaan ko dene ki koi wajah nahi.
+Yaad rakhne wala rule: Draft achha hona draft ka saboot hai, faisle ka nahi.
+
+QUESTION 2 OF 12
+Chapter section: Part 1, Concept 2: Task definition
+At a language school, the admissions head tells a coordinator in the corridor, “We need better reporting on enquiries.” The coordinator has an Excel export of 1,200 enquiries and a free afternoon. She wants to use Claude without guessing what the head means. What is the most appropriate next step?
+A. Ask Claude to draft a sample enquiry report and refine it over several rounds until the head seems satisfied.
+B. Ask Claude to build a dashboard artifact from the export so the head has something concrete to react to.
+C. Ask Claude to turn the sentence into a requirements table with a source column pointing to the sentence.
+D. Ask Claude to turn the request into a task definition covering what is produced, for whom, how often, from what data and in what format, and to flag every slot she has not filled in.
+Correct Answer: Option D
+Explanation (Roman Urdu): Option D sahi hai kyunke “better reporting” abhi requirement nahi hai, aur task definition ke paanch jawab (kya, kis ke liye, kitni baar, kis data se, kis format mein) maangna aur khali slots ko sawal banana hi isay theek karta hai. Option A mein model khali jagah apne andaaze se bhar dega, aur refine karna guess ko lamba karta hai. Option B bhi bina requirement ke build shuru kar deta hai. Option C ka source column bekaar hai kyunke ek mubham jumle se kuch trace nahi hota.
+Yaad rakhne wala rule: Jo slot khali ho, woh model ka blank nahi, tumhara sawal hai.
+
+QUESTION 3 OF 12
+Chapter section: Part 1, Concept 3: Computed, not generated
+A carpentry estimator uploads a CSV of 40 material lines and asks Claude for a quote summary with a totals row. The totals are formatted correctly and look plausible, but the cabinet-hardware total is Rs 1,800 off from her rough mental figure. The quote goes to a client tomorrow morning, and she has already used the same prompt for earlier quotes. Which change to the prompt is most appropriate?
+A. Ask Claude to calculate the totals with code execution on the CSV, then check which columns the code actually summed.
+B. Rewrite the prompt with a longer description of how each category should be added up and what a correct total looks like.
+C. Rerun the same prompt on a more capable model tier, since the smaller one is likely the reason the arithmetic drifted.
+D. Reply in the chat asking Claude to double-check its own totals and confirm that the figures are right.
+Correct Answer: Option A
+Explanation (Roman Urdu): Option A sahi hai kyunke totals ek calculation hain, aur jo number matter karta hai usay compute karna chahiye, likhwana nahi. Code chalne ke baad bhi dekhna parta hai ke code ne sahi column jama kiya ya nahi. Option B symptom ka ilaaj hai, kyunke masla likhe hue number ka hai, prompt ki lambai ka nahi. Option C zarurat se bara fix hai aur nateeja phir bhi prose mein likha hoga. Option D mein dobara prose mein confirm karwana hai, jo likhe aur calculate kiye hue number mein farq nahi dikhata.
+Yaad rakhne wala rule: Number matter kare to compute karo, likhwao mat.
+
+QUESTION 4 OF 12 SELECT TWO
+Chapter section: Part 1, Concept 4: The window test and judgment steps
+A zoo education officer is planning school-visit capacity for next term using Claude. She has booking spreadsheets and last year’s attendance. Last week the board decided in a meeting to freeze overtime, and the minutes have not been circulated. She is also unsure whether the district office would accept shorter guided tours. Which TWO steps should she keep for herself, according to the window test?
+A. Choose which staffing option to recommend to the board, since the overtime freeze lives in a meeting and not in any file.
+B. List the possible staffing options from last year’s attendance and the booking trend in the spreadsheets.
+C. Decide whether to offer shorter guided tours, since the district office’s willingness is not something she can put in front of Claude.
+D. Work out average group size per school with code execution on the booking spreadsheet.
+Correct Answer: Option A and C
+Explanation (Roman Urdu): Option A aur C sahi hain kyunke dono steps ke inputs window mein daale hi nahi ja sakte: overtime freeze ek meeting ka faisla hai, aur district office ki raza kisi file mein nahi. Aise judgment steps mein model khali jagah ko “aam tor par aisa hota hai” se bhar deta hai, utni hi confidence ke saath. Option B synthesis hai jiske saare inputs spreadsheets mein hain, is liye AI ko diya ja sakta hai. Option D ek calculation hai jis ka data file mein maujood hai, aur code execution ka kaam hai.
+Yaad rakhne wala rule: Agar step ka input window mein nahi aa sakta, to step tumhara hai.
+
+QUESTION 5 OF 12
+Chapter section: Part 2, Concept 5: Three criteria (reversibility, stakes, accountability)
+A hotel planning associate wants Claude to draft a shortlist of five conference venues for a client event. A planning manager reviews every line of the shortlist, and no venue is contacted until she signs off. A colleague argues the drafting must stay fully human because the manager is accountable for the final choice. The shortlist can be rewritten in minutes, and the associate also has a spare laptop at her desk. Which statement is most appropriate?
+A. Drafting stays human, because anything that feeds a decision someone answers for must be written by a person.
+B. Claude may draft, but only after it has produced three test shortlists that the manager rated as strong.
+C. Claude may draft, because the draft is reversible and accountability sits at the manager’s review, which comes before anything happens.
+D. Claude may draft, but a second reviewer should be added, because one manager cannot be accountable for an AI-written list.
+Correct Answer: Option C
+Explanation (Roman Urdu): Option C sahi hai kyunke draft dobara likha ja sakta hai aur jawab-dehi manager ke review par hai, jo kisi venue se rabta hone se pehle hota hai. Jo step aisa input banata hai jisay koi aur judge kare, woh de diya ja sakta hai. Option A step ko faisla samajh leta hai, halanke faisla review par hota hai. Option B performance ko criterion bana raha hai, jabke woh teen criteria mein nahi. Option D ka naya reviewer ghair-zaruri hai, kyunke jawab-dehi AI par shift nahi hui aur manager ka review mojood hai.
+Yaad rakhne wala rule: Jo step input hai aur uske baad insaan judge karta hai, woh AI ko diya ja sakta hai.
+
+QUESTION 6 OF 12
+Chapter section: Part 2, Concepts 7 and 8: The unstaffed gate
+At an ice rink, AI drafts incident summaries and the duty supervisor reviews each one before it is filed with the insurer. When the map was written, volume was about 20 incidents a week, and it is now about 55. The supervisor now approves each summary in a few seconds, and nobody has changed the map. Last month a summary left out a detail about a skater’s fall injury. Which pattern is this, and what is the fix?
+A. Halo delegation, so drafting should move back to a human until summaries have been accurate again for a quarter.
+B. Stale configuration, so the standing instruction should be updated to require every injury detail.
+C. Under-specification, so the prompt should name the injury fields that every summary must include.
+D. An unstaffed gate, so someone should ask who reviewed last week and for how long, then resize the gate to the new volume.
+Correct Answer: Option D
+Explanation (Roman Urdu): Option D sahi hai kyunke volume 20 se 55 ho gaya aur review ek jhalak aur click ban gaya, yani step khud-ba-khud automate ho chuka hai jabke map ab bhi gate dikha raha hai. Fix yeh hai ke poochho pichhle hafte kis ne kitni der review kiya, aur gate ko naye volume ke hisaab se banao. Option A halo delegation hai jo yahan mawafiq nahi, aur step wapas insaan ko dena zarurat se bara fix hai. Option B mein koi purani instruction ka saboot nahi diya gaya. Option C mein prompt ka masla nahi, review ka masla hai.
+Yaad rakhne wala rule: Gate ka naqsha nahi, pichhle hafte ka review dekho.
+
+QUESTION 7 OF 12
+Chapter section: Part 4, Concept 11: Four causes, told apart by timing
+A restaurant manager uses a Claude Project to draft a 30-item weekly specials menu. The first ten items follow the house format, with prices in rupees and the allergen line last. By item 25, prices have no currency and the allergen line is missing. The Project’s standing instructions were edited yesterday and the knowledge files are current. Which pattern is this, and what is the fix?
+A. Under-specification, so the format rules should be added to the prompt in more detail.
+B. Context overload, so restate the instruction in a fresh session or restart from a short summary.
+C. Stale configuration, so the standing instructions and knowledge files should be audited line by line.
+D. Wrong model tier, so the same session should be rerun on a slower, more capable model.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke output pehle theek tha aur lambe session ke saath bigra, jo context overload ki nishani hai. Fresh session mein instruction dohra kar ke ya summary se dobara shuru karna sasta test aur fix dono hai. Option A galat hai kyunke shuru ke items format par chale, yani prompt mein cheez maujood thi. Option C isliye galat hai ke instructions kal edit hue aur files current hain. Option D bara aur be-sabab fix hai, kyunke masla model ki salahiyat ka nahi session ki lambai ka hai.
+Yaad rakhne wala rule: Shuru mein theek, phir bigre: pehle context overload socho.
+
+QUESTION 8 OF 12 SELECT TWO
+Chapter section: Part 5, Concept 14: Rule, reference, or procedure
+A cement plant’s sales office has a Claude Project for quote emails. Each month a sales rep makes the same three corrections by hand: the delivery district must be in the first line, the current price list changes every quarter, and the monthly dispatch report must be built in a fixed order of steps. A colleague covers for her during leave. Which TWO changes match a signal to its fix?
+A. Put the quarterly price list into the Project’s standing instructions as a block of text.
+B. Add “state the delivery district in the first line” as a standing instruction in the Project.
+C. Add the dispatch report’s ordered steps as a single line in the standing instructions.
+D. Upload the current price list to the Project’s knowledge base and replace it each quarter.
+Correct Answer: Option B and D
+Explanation (Roman Urdu): Option B aur D sahi hain kyunke district wali baat ek rule hai jo standing instruction mein jati hai, aur price list ek reference hai jo knowledge base mein rehti hai aur har quarter badli ja sakti hai. Option A reference ko instruction mein thoos deta hai, jisse har prompt bhari ho jata hai chahe zarurat ho ya na ho. Option C ek procedure ko ek line mein daalta hai, jis se steps ka order kho jata hai; procedure ka ghar Skill hai.
+Yaad rakhne wala rule: Rule instruction mein, reference knowledge mein, procedure Skill mein.
+
+QUESTION 9 OF 12
+Chapter section: Part 3, Concept 10: The escalation signal
+At a subtitling studio, a producer built a Claude artifact tracker for her own subtitle deadlines. Four other teams now open it every morning, and finance quotes its figures in a weekly client email. It still works, and she has been adding features by asking Claude in one-line requests. Which is the most appropriate next step?
+A. Treat it as shared infrastructure and bring in developer or architect expertise for access, ownership and reliability.
+B. Keep improving it by prompt, since each request has worked so far and the loop is fast.
+C. Plan to turn it into a worker, since she has now built the same kind of tracker three ways.
+D. Add a standing instruction asking Claude to flag any figures that look unusual before the weekly email goes out.
+Correct Answer: Option A
+Explanation (Roman Urdu): Option A sahi hai kyunke jab doosre log kisi tool par infrastructure ki tarah depend karne lagen, to woh escalation signal hai aur us ko uptime, access control aur zimmedar insaan chahiye. Option B wohi ghalti hai jis mein cheez prompt se chalti rehti hai jab doosre uspar nirbhar ho chuke hon. Option C doosra signal hai (ek hi tareeqa teen baar), jo yahan ki wajah nahi. Option D ek chhota rule hai jo ownership aur access ka masla hal nahi karta.
+Yaad rakhne wala rule: Jab doosre log depend karen, tool prompt se bara ho chuka hai.
+
+QUESTION 10 OF 12
+Chapter section: Part 5, Concept 16: Baseline and parallel run
+A welfare trust’s grants officer wants to build a Skill for the monthly donor report. She believes it will save time because the report “takes about an hour” now, but she has never timed it. The finance head will ask for a business case next quarter, and the Skill could be built this week. Which approach is most appropriate?
+A. Build the Skill now, time the new version, and use her memory of the old time as the comparison.
+B. Ask two colleagues how long the report takes and use the average as the before figure.
+C. Run the report once unchanged, recording time, revision rounds and manual steps, then run old and new together for a few cycles.
+D. Time the Skill version for several months and compare it with last year’s rough estimate of the report time.
+Correct Answer: Option C
+Explanation (Roman Urdu): Option C sahi hai kyunke baseline tabhi ban sakti hai jab badlav se pehle ek cycle unchanged chalayi jaye aur teen cheezein naapi jayen. Phir parallel run se saboot, fallback aur logon ki raza milti hai. Option A mein purani cheez yaad se andaza hai, jo hamesha apne aap ko flatter karta hai. Option B bhi andaza hai, naap nahi. Option D mein behtar tareeqe ka koi measured muqabla nahi hota.
+Yaad rakhne wala rule: Badalne se pehle naapo, baad mein andaza mat lagao.
+
+QUESTION 11 OF 12 SELECT TWO
+Chapter section: Part 5, Concept 15: Find the friction before you optimize
+A hostel’s bookings team has three associates who each produce a weekly occupancy summary. Each one formats it differently, and the manager reconciles them every Monday. One associate also fixes the same date-format error in every output, and another re-pastes the same house rules into each chat. Which TWO changes match a signal to its fix?
+A. Different people get differently shaped results, so give them a shared Skill or knowledge base.
+B. The same house rules are re-pasted every run, so switch to a more capable model tier.
+C. The same flaw is fixed in every output, so tell Claude to be more careful in each new prompt.
+D. The same flaw is fixed in every output, so make a configuration change so the flaw stops appearing.
+Correct Answer: Option A and D
+Explanation (Roman Urdu): Option A aur D sahi hain kyunke variance ka ilaaj shared Skill ya knowledge base hai, aur har output mein ek hi ghalti ka ilaaj configuration change hai jis se woh aana band ho jaye. Option B galat hai kyunke repetition ka fix saved context ya standing instruction hai, behtar model nahi. Option C galat hai kyunke har prompt mein “ehtiyat karo” likhna wahi hath se theek karna hai, configuration mein nahi gaya.
+Yaad rakhne wala rule: Repetition, correction aur variance teeno ka ilaaj configuration hai.
+
+QUESTION 12 OF 12
+Chapter section: Part 6, Concept 18: Say what it does, then name the gate
+A textile exporter’s compliance coordinator has set up a workflow in which Claude extracts order terms and drafts the packing list, and a named merchandiser checks and approves each one before shipping documents go out. A buyer’s risk team has asked for one sentence describing the process. The coordinator also has a short slide for the executive team already prepared. Which description is most appropriate?
+A. “Packing lists are handled by AI and fully automated, with errors rare.”
+B. “AI drafts each packing list, and a named merchandiser approves every one before any document is sent.”
+C. “AI is about as accurate as an experienced merchandiser at preparing packing lists.”
+D. “Packing list drafting is automated, and merchandisers monitor exceptions as they arise.”
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke yeh batata hai ke tool kya karta hai aur phir insani checkpoint ka naam leta hai, jo risk team ko control dikhata hai. Option A “fully automated” aur “AI handles” ki ghalti hai, jis se gate gayab ho jata hai. Option C aisa meyaar bana deta hai jo tool kabhi na kabhi miss karega. Option D mein gate ki jagah sirf exceptions ki nigrani aa gayi, jo har packing list ki approval ko nahi batati.
+Yaad rakhne wala rule: Pehle batao tool kya karta hai, phir insani gate ka naam lo.
+
+SUMMARY TABLE
+
+Question	Chapter section tested	Type
+1	Concept 7: over-delegation and halo delegation	Single
+2	Concept 2: task definition	Single
+3	Concept 3: computed, not generated	Single
+4	Concept 4: window test and judgment steps	Select two
+5	Concept 5: three criteria (accountability at the review)	Single
+6	Concepts 7 and 8: unstaffed gate	Single
+7	Concept 11: four causes by timing (context overload)	Single
+8	Concept 14: rule, reference, or procedure	Select two
+9	Concept 10: escalation signal	Single
+10	Concept 16: baseline and parallel run	Single
+11	Concept 15: friction signals (repetition, correction, variance)	Select two
+12	Concept 18: say what it does, then name the gate	Single
+POINTS TO VERIFY
+
+Wrong chapter: your prompt says the Project holds a chapter of “AI Fluency”, but the files I received were “Just Delegate It” and “Workflow Design & Diagnosis”. The URL you pasted is for Workflow Design & Diagnosis, so I wrote all 12 questions from that chapter only. If you wanted AI Fluency, please send that chapter and I will redo the set.
+12 vs 20: your prompt asks for exactly 12 questions in one place and “20” at the end. I wrote 12. If you want 20, tell me and I will write 8 more on the untested concepts (research source rule, reaction to instruction, diagnostic sequence, incident path, map owner questions, mapping the tool instead of the work).
+Q5: it follows the chapter’s own assessment example closely, so check that it is not too similar to the chapter’s Question 1.
+Q12: the chapter does not state exactly which wording a risk team prefers beyond “state what the tool does, then name the human checkpoint”. Option D is the closest distractor, so verify that you agree it fails because it drops the per-item approval gate.
+Q8: the chapter says Skills sit at account level and knowledge and instructions at Project level. I tested only rule and reference as correct answers and used the procedure as a distractor.
+8 more
+
+QUESTION 13 OF 20
+Chapter section: Part 4, Concept 12: The diagnostic sequence (cheapest first)
+At a drinks bottler, a dispatch planner asks Claude to summarise a 6-page route-change memo into key points. The summary keeps missing the cut-off times, and she is convinced the task is too hard for Claude. She wrote the prompt in one line: “Summarise this memo.” The session is new, the Project configuration is current, and she has not tried any other settings. What is the most appropriate next step?
+A. Switch to the most capable model tier and rerun the same one-line prompt.
+B. Re-read the prompt against its five parts and name what counts as a key point, such as cut-off times.
+C. Conclude the memo needs a human to summarise it, since the task is not a fit.
+D. Audit the Project’s knowledge files and standing instructions for out-of-date content.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke sequence sab se sasta check pehle rakhta hai, aur ek line ka prompt under-specification ki nishani hai: “key point” kya hota hai yeh kahin likha hi nahi. Option A sequence ko ulta chalata hai, neeche se shuru kar ke. Option C sab se mehnga aur aakhri qadam hai, jo cheaper causes rule out hone se pehle nahi uthana chahiye. Option D mein configuration pehle se current hai aur session naya hai, is liye woh cause nahi.
+Yaad rakhne wala rule: Pehle prompt dobara parho, model aur task ko aakhir mein chhedo.
+
+QUESTION 14 OF 20
+Chapter section: Part 1, Concept 4: Research as a synthesis step (stable vs current facts)
+A hotel planning associate asks Claude to compare conference-room hire rates at three competing hotels for a proposal due this afternoon. Claude replies with three neat figures and no links. The associate also asked it to explain the usual structure of hotel room-hire pricing, which it did well from its own knowledge. Which request is most appropriate?
+A. Ask Claude to repeat the three rates with a short note on how confident it is in each.
+B. Ask Claude to use web search and return each rate with a link she can open and check.
+C. Ask Claude to explain again the usual structure of room-hire pricing, so the rates can be inferred from it.
+D. Accept the figures, because Claude explained the pricing structure accurately and the figures follow from it.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke current ya priced cheez ke liye external source chahiye jo tum khol sako, jawab ke saath link ke saath. Option A mein confidence ka izhar link ke badle nahi aa sakta, kyunke model pichhle jaisi confidence se hi bolta hai. Option C stable concept ko current figure ka substitute bana raha hai. Option D ek hisse (structure) ki durusti ko doosre hisse (rates) ka saboot samajh leta hai.
+Yaad rakhne wala rule: Jo cheez current ho, uska link maango, confident jawab nahi.
+
+QUESTION 15 OF 20
+Chapter section: Part 5, Concept 13: Turn a reaction into an instruction
+A welfare trust’s communications officer is unhappy with a Claude-drafted donor appeal. She says it feels “too generic”. The draft names no audience and ends without any request. She has the donor segment list and wants the next draft to be better. Which change is most appropriate?
+A. Ask Claude to make the next draft more warm and personal in tone.
+B. Name the audience and the one action she wants donors to take, in the prompt.
+C. Replace the donor segment list in the knowledge base with a newer file.
+D. Add a standing instruction that all drafts must sound less generic.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke “too generic” ek reaction hai, aur chapter ke mutabiq ise instruction mein badalne ke liye audience aur ek action naam se dena hota hai, aur lever yahan prompt hai. Option A tone badalta hai, jabke masla audience aur action ka na hona hai. Option C galat lever hai, kyunke koi saboot nahi ke list purani hai. Option D ek aur reaction hai, instruction nahi, kyunke “less generic” se nahi pata chalta kya badalna hai.
+Yaad rakhne wala rule: Agar lever ka naam nahi le sakte, to tanqeed abhi sirf reaction hai.
+
+QUESTION 16 OF 20
+Chapter section: Part 6, Concept 17: When a bad output gets out
+At a cement plant’s sales office, a Claude-assisted quote workflow has been using a price list that went stale some time last month. Yesterday a client queried a quote that was Rs 40,000 too low. The sales manager’s first instinct is to correct that one quote and tell the client. Nobody on the team knows who is allowed to pause the workflow. What is the most appropriate next step?
+A. Correct the one quote, apologise to the client, and update the price list file.
+B. Pause the workflow, then find how many quotes since the list went stale were affected and where they went.
+C. Wait until the monthly map review to decide what to change in the workflow.
+D. Ask Claude to re-check all quotes produced this month using the correct price list.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke stale configuration sirf ek nahi balkay jab se purani hui, har result bigarti hai, is liye pehle rokna aur scope maloom karna zaruri hai ke kitne outputs kahan gaye. Option A sirf ek quote theek karta hai aur baqi nuqsan chhod deta hai. Option C bohat der kar deta hai, kyunke incident ka waqt ghanton ka hota hai. Option D scope check ko AI par chhodta hai aur workflow chalta rehta hai.
+Yaad rakhne wala rule: Ek galat output nahi, jab se masla hai tab se saare outputs dekho.
+
+QUESTION 17 OF 20
+Chapter section: Part 2, Concept 8: Map ownership and the scheduled read
+At a hostel group, a delegation map for booking confirmations was written six months ago. The team lead says nobody has changed it, so it must still be accurate. Since then a new booking channel was added, the reviewer for drafts changed roles, and weekly volume doubled. No owner or review date was ever named. Which request is most appropriate?
+A. Ask Claude to re-read the map and tell the team whether it still looks correct.
+B. Rewrite the map from scratch this week and file it without further review.
+C. Name one map owner and a review date, then ask who reviewed last week and for how long.
+D. Check the standing instructions only, since those are the part most likely to have decayed.
+Correct Answer: Option C
+Explanation (Roman Urdu): Option C sahi hai kyunke map ko ek naam wala owner aur review date chahiye, aur sab se kaam ka sawal yeh hai ke pichhle hafte kis ne kitni der review kiya, kyunke policy map mein hai aur haqeeqat pichhla hafta hai. Option A mein Claude ko map dobara parhwane se haqeeqat nahi milti. Option B zarurat se bara fix hai aur phir bhi owner aur date ke baghair wohi decay shuru hoga. Option D sirf aik cheez dekhta hai jabke channel, reviewer aur volume sab badal chuke hain.
+Yaad rakhne wala rule: Map ka owner aur review date ho, aur poochho pichhle hafte kya hua.
+
+QUESTION 18 OF 20 SELECT TWO
+Chapter section: Part 2, Concept 7: Three ways a map goes wrong
+A subtitling studio’s map for client jobs reads as follows. Claude pulls the job brief, then summarises it in a template that the studio’s Skill produces. Claude then classifies jobs as “routine” or “urgent” because “the summaries have been accurate for months”. Finally Claude sends routine-job delivery notes without review, because “routine is low risk”. Which TWO statements correctly identify problems in this map?
+A. Classifying urgency is halo delegation, because the reason given is the accuracy of the summary step.
+B. Pulling the job brief is over-delegation, because retrieval should always stay human.
+C. Sending routine delivery notes without review is over-delegation, because the “routine” label came from the same system now sending without a gate.
+D. The summary template is wrong because Skills should never shape the format of a workflow step.
+Correct Answer: Option A and C
+Explanation (Roman Urdu): Option A aur C sahi hain kyunke urgency classification ka jawaz summary ki accuracy hai, jo ek mukhtalif step ki salahiyat hai (halo delegation), aur bhejna wapas nahi ho sakta jab ke “routine” ka label usi system ne diya jo ab bina review ke bhej raha hai. Option B galat hai kyunke retrieval mechanical aur reversible hai, aur step ko human rakhne ki zarurat nahi. Option D mein hadd se zyada bayan hai: chapter sirf yeh kehta hai ke tool ke format ke gird workflow banana ghalat hai, yeh nahi ke Skill format de hi nahi sakti.
+Yaad rakhne wala rule: Ek step ki achhi karkardagi doosre step ka permission nahi.
+
+QUESTION 19 OF 20
+Chapter section: Part 3, Concept 9: The build loop (description problem vs feature problem)
+A zoo education officer has Claude build a small artifact that tracks school-visit bookings. She asks for brand colours and a print-friendly layout, which come back correct on the first try. She then asks for a monthly total row, and the figure looks right in size and format but is slightly off against her own spreadsheet. Which pattern is this, and what is the fix?
+A. A description problem, so she should describe the total row in more detail in the next prompt.
+B. Context overload, so she should open a fresh chat and rebuild the artifact from the start.
+C. Stale configuration, so she should check when the knowledge file was last updated.
+D. A feature problem, since the total was written and not computed, so the total should come from code execution.
+Correct Answer: Option D
+Explanation (Roman Urdu): Option D sahi hai kyunke total ek calculation hai jo likhi gayi, compute nahi hui, aur sirf behtar description ise theek nahi karti, feature badalna parta hai. Option A isliye galat hai ke colours aur print wali requests description se theek ho gayi thin, magar total ka masla wahan nahi hai. Option B zarurat se bara fix hai, aur masla session ki lambai ka nahi. Option C ka koi saboot scenario mein nahi.
+Yaad rakhne wala rule: Description se rang theek hote hain, hisaab ke liye feature chahiye.
+
+QUESTION 20 OF 20
+Chapter section: Part 2, Concept 6: Same criteria across different workflows (verification step as human)
+At a drinks bottler, HR uses Claude to draft offer letters from an approved template and to pull new-hire details from the HR export. A step in the workflow confirms that each offer’s salary matches the approved requisition before the letter is sent. The team proposes letting Claude do that confirmation as well, because it is “just a comparison of two numbers”. Nothing happens after the confirmation except the send. What is the most appropriate decision?
+A. Give the confirmation to Claude, because comparing two numbers is arithmetic and can be done by code execution.
+B. Give the confirmation to Claude and add a second Claude pass as a safeguard.
+C. Keep the confirmation with a named reviewer, since it is the check itself and nothing follows it.
+D. Keep the confirmation human only until the first month of letters has gone out without errors.
+Correct Answer: Option C
+Explanation (Roman Urdu): Option C sahi hai kyunke yeh step khud woh check hai jis ke baad sirf bhejna reh jata hai, yani koi aur gate nahi, is liye accountability aur reversibility dono ke hisaab se insaan ke paas rehna chahiye. Option A “computed” ko “AI ko do” ki wajah bana raha hai, jabke woh column implementation ka hai, ownership ka nahi. Option B mein dono check AI ke hain, koi insaan jawab-deh nahi. Option D performance ko criterion bana raha hai, jo teen criteria mein nahi.
+Yaad rakhne wala rule: Jis step ke baad koi check nahi, woh khud check hai aur insaan ka hai.
+
+SUMMARY TABLE (QUESTIONS 13-20)
+
+Question	Chapter section tested	Type
+13	Concept 12: diagnostic sequence, cheapest first	Single
+14	Concept 4: research source rule (stable vs current)	Single
+15	Concept 13: reaction to instruction, name the lever	Single
+16	Concept 17: incident path (stop, scope)	Single
+17	Concept 8: map owner and scheduled read	Single
+18	Concept 7: halo delegation, over-delegation	Select two
+19	Concept 9: build loop, description vs feature problem	Single
+20	Concept 6: onboarding map, verification step stays human	Single
+POINTS TO VERIFY
+
+Q18 and Q1/Q6 overlap: Q18 uses the same chapter concept as Q1 (halo and over-delegation), though in a different scenario. If you want zero overlap, I can replace it with a question on incident decisions or the extract-then-attack requirements move.
+Q16: the chapter says “stop, scope, tell, change the map”. I tested only stop and scope, so check that you are happy “pause then scope” beats the other options.
+Q19: the chapter’s own cycle 2 is very close to this scenario, so check it is not too similar to the chapter wording.
+Q20: the chapter says the confirmation step is human “because nothing follows it”, so Option C follows that reasoning. Check you agree D fails only because it uses performance as a criterion.
+Answer spread across all 20: B, D, A, A and C, D, B, B, D, C for Q1-10 start; from Q13 to Q20 the letters are B, B, B, B, C, A and C, D, D, C, so letter B is heavy in 13-16. Reshuffle options if you want a more even spread.
