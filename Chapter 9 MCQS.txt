@@ -1,0 +1,255 @@
+QUESTION 1 OF 20
+Chapter section: 1.3 A human in the loop is not a gate (who, what, when)
+Mehwish manages reservations at a 120-seat restaurant. A guest was charged a Rs 5,000 deposit twice, and she wants Claude to draft the apology and refund reply from the booking and payment record. The restaurant stays responsible for anything it tells a guest about their money, and the email goes out at the end of the shift. Her team lead says only, “We’ll keep a human in the loop.” Which gate is written most appropriately?
+A. The evening shift will read the reply and make sure it looks fine before it is sent out.
+B. The duty manager checks the refund amount and date against the payment record before sending.
+C. The finance team reviews a weekly sample of sent replies to confirm the amounts were correct.
+D. The reservations manager rereads each reply for a polite, apologetic tone before it is emailed.
+Correct Answer: Option B
+Explanation (Roman Urdu): Option B sahi hai kyunke is mein teeno cheezein hain: kaun check karta hai (duty manager), kya check karta hai (amount aur date payment record se) aur kab (bhejne se pehle). Scenario mein asal risk paison ke baare mein ghalat fact ka hai, aur B usi risk ko pakadta hai. A sirf “someone will check” hai, yani intention hai, control nahi. C bhejne ke baad check karta hai, jab ghalti wapas nahi hoti (wrong timing). D sirf tone dekhta hai, jabke asal risk facts ka hai (wrong risk).
+Yaad rakhne wala rule: Gate = kaun, kya verify kare, aur kab (undo hone se pehle).
+
+QUESTION 2 OF 20
+Chapter section: 2.2 The discriminator: does the task need the identifiers or only the pattern?
+Imran is a bookings associate at a hostel chain. He has a 3,000-row sheet with guest names, passport numbers, room type and stay dates, and wants Claude to show which months and room types are busiest. Company policy restricts regulated personal data, and the report is due in two hours. The sheet also has a column of breakfast preferences. What is the most appropriate next step?
+A. Upload the sheet as it is, because booking files are routine internal data.
+B. Upload the full sheet and tell Claude in the prompt not to retain anything.
+C. Skip the analysis completely, because the file contains passport numbers.
+D. Remove names and passport numbers, check no lookup list travels with it, then run the analysis.
+Correct Answer: Option D
+Explanation (Roman Urdu): Busy months aur room types ka sawal sirf pattern maangta hai, identifiers nahi, is liye redaction sahi move hai aur saath mein check karna ke mapping list file ke saath na jaye. A policy todta hai kyunke regulated data as-is upload hota hai. B mein “retain na karo” sirf ek wish hai, control nahi. C zarurat se zyada ehtiyat hai, kyunke kaam identifiers ke baghair ho sakta hai aur kaam chhorna kisi ko protect nahi karta.
+Yaad rakhne wala rule: Pehle poochho identifiers chahiye ya sirf pattern; pattern ho to hatao aur verify karo.
+
+QUESTION 3 OF 20
+Chapter section: 2.2 Redaction and pseudonymization
+At an ice rink, an operations associate replaces skater names with “Skater 17”, “Skater 18” and so on in a lesson-attendance sheet before analyzing no-shows. The lookup file that maps each number back to a name sits on the shared drive, and two colleagues can open it. A coworker says the sheet is now anonymous and therefore green. Which statement is most appropriate?
+A. The data is pseudonymized because the mapping still exists, so it keeps its original tier.
+B. The data is anonymized because the names are gone, so it can be treated as green.
+C. The data is green as long as the lookup file is not uploaded in the same chat.
+D. The data is red because any attendance record about people must be avoided.
+Correct Answer: Option A
+Explanation (Roman Urdu): Jab tak koi mapping list rakhta hai, labels wapas insan tak trace ho sakte hain, is liye data pseudonymized hai aur apna original tier rakhta hai. B ghalat hai kyunke naam badalna anonymization nahi, sirf relabeling hai. C bhi ghalat hai kyunke list ka alag file mein hona usay khatam nahi karta, wo abhi bhi maujood hai. D bohat zyada sakht hai, chapter har attendance record ko red nahi kehta.
+Yaad rakhne wala rule: Mapping list maujood hai to “Customer 17” anonymous nahi, tier wahi rehta hai.
+
+QUESTION 4 OF 20
+Chapter section: 3.1-3.2 Five checks and three outcomes (enable, escalate, decline)
+A shift supervisor at a drinks bottling plant gets a Skill from a public forum that turns handover notes into summaries. A colleague says it worked well for them, but the Skill’s files also mention reading folders and sending email. It would run in a session that can reach the production-planning folder, and the publisher is unknown. Which request is most appropriate?
+A. Enable it and watch what it does for a week before deciding.
+B. Enable it only in an incognito chat so that nothing is kept.
+C. Escalate to security or the admin with the concern, or decline it, and do not enable it yet.
+D. Ask the colleague to vouch for it, then enable it for the whole team.
+Correct Answer: Option C
+Explanation (Roman Urdu): Source unknown hai aur Skill ki reach summarizing ke kaam se kahin zyada hai, is liye escalate ya decline sahi hai, aur enable nahi karna chahiye. A access pehle de deta hai aur risk baad mein samajhta hai. B mein incognito sirf history aur memory ko chhoota hai, Skill ki reach ko nahi. D mein colleague ki recommendation warmth hai, vetting nahi.
+Yaad rakhne wala rule: Unknown source plus broad reach = escalate ya decline, pehle enable nahi.
+
+QUESTION 5 OF 20
+Chapter section: 1.2 Find the deciding factor
+Fatima, a program officer at a welfare trust, wants Claude to draft a condolence note to the family of a long-time beneficiary who passed away. The note is easy to rewrite, has no money or legal claim in it, and she will read it before signing. Which screen is carrying the classification here?
+A. Reversibility, because a bad draft can simply be rewritten.
+B. Human judgment or empathy, because the relationship is the substance of the message.
+C. Consequence of error, because a bad note might be expensive to repair.
+D. Accountability, because the trust must stand behind every factual claim in it.
+Correct Answer: Option B
+Explanation (Roman Urdu): Condolence note mein reversibility aur consequence dono kam hain, phir bhi kaam ek insani rishte ka hai, is liye deciding factor human judgment/empathy hai. A sahi cheez dekhta hai magar wo deciding factor nahi, kyunke asaan rewrite is task ko AI-ready nahi bana deta. C scenario se match nahi karta, kyunke is mein paisa ya legal claim nahi. D billing reply jaisi cases ke liye hai, jahan factual claims kaam ka center hain.
+Yaad rakhne wala rule: Deciding factor wo screen hai jo badle to classification badal jaye; condolence mein wo rishta hai.
+
+QUESTION 6 OF 20
+Chapter section: 3.3 Trusted tool, untrusted content (read-only by default)
+Bilal is a carpentry estimator who checks every quote before it goes to a customer. He wants a connector to the supplier’s price-list system so Claude can pull timber prices into quote drafts. The connector offers both read and edit access, and his workflow only ever reads prices. Which request is most appropriate?
+A. Ask the admin to enable it read-only, limited to the price tables the workflow needs.
+B. Ask for full read and edit access so the workflow does not need changes later.
+C. Decline any connector, because tools that reach other systems are always unsafe.
+D. Enable it with full access because the supplier is a known, trusted publisher.
+Correct Answer: Option A
+Explanation (Roman Urdu): Workflow sirf prices parhta hai, to read-only aur sirf zaroori tables tak access least privilege ke mutabiq hai. B “just in case” write access deta hai, jo chapter mana karta hai. C zarurat se zyada hai, kyunke proportionate reach ke saath connector enable ho sakta hai. D mein publisher ka trusted hona reach ka sawal hal nahi karta.
+Yaad rakhne wala rule: Jitna kaam chahiye utna hi access: read-only jab kaafi ho.
+
+QUESTION 7 OF 20 SELECT TWO
+Chapter section: 3.3 Trusted tool, untrusted content
+A subtitling studio uses a connector from a reputable vendor that reads its shared inbox of client emails. Claude uses it to summarize job requests, and the connector can also send emails and share files. The emails come from outside the studio, and the studio has been using the connector for a month without problems. Which TWO controls best match the risk?
+A. Keep send and share actions behind a defined human approval.
+B. Treat the emails as safe because the connector comes from a reputable publisher.
+C. Limit the connector to read-only access on the folders the summaries need.
+D. Keep sending enabled because mistakes in sent emails can be fixed afterward.
+Correct Answer: Option A and C
+Explanation (Roman Urdu): Risk is mein hai ke bahar ke emails model ko steer kar sakte hain, is liye send/share jaise irreversible actions human gate ke peeche rakhna (A) aur access read-only aur zaroori folders tak rakhna (C) dono sahi hain. B ghalat hai kyunke tool kisne banaya aur content kisne likha, ye do alag trust sawal hain. D ghalat hai kyunke bheji hui email wapas nahi hoti, aur ek mahine ki clean history autonomy earn nahi karti.
+Yaad rakhne wala rule: Publisher trusted ho tab bhi bahar ka content untrusted hai; send/pay/delete insani gate ke peeche.
+
+QUESTION 8 OF 20
+Chapter section: 4.1 Look at who was excluded
+At a language school, Claude narrows 400 scholarship applications to a shortlist of 30, and the admissions head carefully checks each of the 30 against the application files. The other 370 are never opened, and the shortlist decides who gets funding. What is the most appropriate next step?
+A. Ask Claude to write a longer justification for each shortlisted applicant.
+B. Tell all applicants that AI was used and treat that as the control.
+C. Rewrite the prompt to say “rank all applicants fairly” and rerun it.
+D. Also sample the excluded applications to see who the screen dropped and why.
+Correct Answer: Option D
+Explanation (Roman Urdu): Problem ye hai ke insaan sirf bache hue 30 dekh raha hai, aur jo log nikal diye gaye unhe koi nahi dekhta, is liye exclusions ki sampling control hai. A sirf survivors ko mazeed explain karta hai. B disclosure ho sakta hai zaroori, magar chapter ke mutabiq asal concern ye hai ke koi dekh nahi raha kaun nikla. C ek wish hai jo exclusions ko visible nahi banati.
+Yaad rakhne wala rule: Jo AI nikaal de uski bhi sampling karo, sirf bache hue nahi.
+
+QUESTION 9 OF 20
+Chapter section: 4.2 Disclosure: use rules first, judgment second
+A hotel planning associate used Claude to draft most of a 12-page renovation proposal that will go to a client under her company’s name. The client contract has a section about tools used on the engagement, and she is unsure whether she must say AI helped. She also changed the cover design last night. What should she do first?
+A. Decide based on how much of the text AI wrote.
+B. Add an AI label to every document the company sends out.
+C. Check the contract, company policy and other rules for a disclosure requirement, then use the reader-understanding test if none applies.
+D. Leave it unlabelled because she edited the draft herself.
+Correct Answer: Option C
+Explanation (Roman Urdu): Chapter ka order hai: pehle dekho law, policy, contract ya client commitment disclosure maangta hai ya nahi; agar koi rule jawab de de to faisla ho gaya. Rule na ho to poochho ke AI ka pata chalne se reader ki samajh badlegi ya nahi. A rule dekhe baghair feeling par chalta hai. B har document ko label karna rules-first logic nahi hai. D mein editing se disclosure ka sawal khatam nahi hota.
+Yaad rakhne wala rule: Disclosure mein pehle rules, phir “reader ki samajh badlegi?” ka judgment.
+
+QUESTION 10 OF 20
+Chapter section: 7. The first-hour procedure
+In a cement plant’s sales office, Nadia pasted a customer price list with contact names into a chat from an account the company has not approved. She realized it after lunch. She is thinking of deleting the chat and saying nothing. What is the most appropriate next step?
+A. Delete the chat and carry on, because the visible copy is gone.
+B. Stop the spread, record what happened and by which route, and report through the incident path.
+C. Wait a few days to see whether anything comes of it before reporting.
+D. Check quietly whether anyone noticed, then decide whether to report.
+Correct Answer: Option B
+Explanation (Roman Urdu): Pehle spread rokho, facts likho (kya data, kaunsa route, kab) aur incident path se jaldi report karo, phir owner ke instructions follow karo. A ghalat hai kyunke apni copy delete karne se organizational ya vendor records khatam nahi hote aur ye concealment ban jata hai. C mein waqt zaya hota hai, jabke clock polish se zyada ahem hai. D mein report karne ka faisla doosron ki nazar par chhor diya gaya hai.
+Yaad rakhne wala rule: Ghalti ho to rokho, likho, report karo; delete karke chupana nahi.
+
+QUESTION 11 OF 20
+Chapter section: 2.1 Three practical tiers (red tier)
+A zoo education officer wants Claude to turn a licensed commercial curriculum pack into school-visit worksheets. The supplier’s licence forbids copying the material into any other system. She plans a temporary chat so nothing is saved, and the worksheets are due next week. Which statement is most appropriate?
+A. Treat the pack as red and do not upload it unless the route or permission is confirmed.
+B. Treat it as yellow and use a temporary chat to limit retention.
+C. Treat it as green, because educational material is low risk.
+D. Treat it as yellow and remove the supplier’s logo before uploading.
+Correct Answer: Option A
+Explanation (Roman Urdu): Chapter ke mutabiq jo licensed material kisi aur system mein copy karne se mana ho wo red tier mein aata hai, is liye approved route ya permission confirm hone tak upload nahi. B mein temporary chat sirf persistence ko chhoota hai, authorization ko nahi. C ghalat hai kyunke “educational” hona licence ki shart khatam nahi karta. D mein logo hatana content ko red se yellow nahi banata.
+Yaad rakhne wala rule: Licence jo copy mana kare wo red hai; temporary chat permission nahi deta.
+
+QUESTION 12 OF 20
+Chapter section: 2.5-2.6 Privacy controls answer narrower questions
+A ground-handling supervisor at an airport wants Claude to sort a passenger list with names and seat numbers by boarding group. He says, “I’ll use an incognito chat, which isn’t used for training on any plan, so it’s fine.” What is the most appropriate response?
+A. That is fine, because incognito chats are not retained at all.
+B. That is fine on any plan, because incognito chats are never used for training.
+C. That is fine because the company workspace is approved for all data types.
+D. Incognito affects history and memory, not whether the data may enter, so confirm the route is approved first.
+Correct Answer: Option D
+Explanation (Roman Urdu): Incognito sirf history aur memory ke persistence ka sawal hal karta hai, ye nahi batata ke data is route mein jaane ki ijazat thi ya nahi, is liye pehle approved route confirm karo. A ghalat hai kyunke chapter ke mutabiq incognito ka matlab zero retention nahi (default 30 din). B aadha sahi hai (training nahi hoti) magar nateeja ghalat hai. C ghalat hai kyunke workspace ya enterprise plan har data type ki blanket approval nahi.
+Yaad rakhne wala rule: Privacy control aur authorization alag sawal hain.
+
+QUESTION 13 OF 20 SELECT TWO
+Chapter section: 4.2 The notetaker in the meeting
+A vet clinic wants an AI notetaker on its weekly staff call, where the team discusses client complaints and pricing. The summary will be emailed to 15 staff afterward. Which TWO steps are most appropriate?
+A. Run it quietly, since notetakers are routine tooling and need no announcement.
+B. Announce at the start of the call that the notetaker is present.
+C. Skip the route check, because only a summary is shared.
+D. Review the summary before it circulates, because a misattributed commitment is a real error.
+Correct Answer: Option B and D
+Explanation (Roman Urdu): Notetaker ek participant hai jis ki reach poori guftagu tak hai, is liye call ke start mein batana (B) aur summary circulate hone se pehle review karna (D) dono zaroori hain. A ghalat hai kyunke baad mein pata chalne par trust toot-ta hai, aur kuch jagah sab ki consent bhi zaroori hoti hai. C ghalat hai kyunke recording ko bhi upload jaisa route check chahiye.
+Yaad rakhne wala rule: Notetaker ek participant hai: batao, aur summary bhejne se pehle review karo.
+
+QUESTION 14 OF 20
+Chapter section: 8.3 The friction rule
+A farm cooperative’s team lead audits a month of AI use and finds three staff summarizing invoices in personal AI accounts. The approved route needs a request form and a day’s wait, while the personal account takes one click. Which change is most appropriate?
+A. Send a reminder email about the AI policy to every staff member.
+B. Switch off AI use for the whole team until the audit finishes.
+C. Ask what makes the approved way harder than the unsafe way, and fix that friction.
+D. Review each person’s chat history and issue warnings.
+Correct Answer: Option C
+Explanation (Roman Urdu): Log tez raste par chalte hain, is liye approved path ka friction kam karna reminder se zyada risk ghatata hai. A reminder email wahi purana tareeqa hai jo asal wajah ko nahi chhoota. B zarurat se bara fix hai aur useful workflows bhi band kar deta hai. D audit ko performance review bana deta hai, jabke audit process ka hota hai, insaan ka nahi.
+Yaad rakhne wala rule: Tool nahi, approved raste ka friction kam karo.
+
+QUESTION 15 OF 20
+Chapter section: 8.5 Re-check when the workflow changes
+A print shop’s Claude workflow for proofing customer artwork was approved last year. This month the vendor changed a retention feature and the shop added a connector to its order system. The owner says, “It’s already approved.” What is the most appropriate step?
+A. Continue as is, because the approval still stands.
+B. Re-check the affected blocks of the Governance Record, since the feature and connector changed.
+C. Throw away the record and redo the whole governance review from scratch.
+D. Wait for the next quarterly audit to look at the changes.
+Correct Answer: Option B
+Explanation (Roman Urdu): Change khud trigger hai: feature ya retention behavior aur naya connector badle hain, is liye sirf mutassira blocks (data, capability) dobara check karo. A ghalat hai kyunke “approved last year” us cheez ki approval thi jo ab wahi nahi rahi. C zarurat se bara fix hai jab relevant blocks kaafi hain. D calendar ka intezar karta hai jabke change zyada mazboot trigger hai.
+Yaad rakhne wala rule: Kuch badla to us hissay ko dobara check karo, calendar ka intezar nahi.
+
+QUESTION 16 OF 20
+Chapter section: 8.4 When there is no AI policy
+At a bakery chain, the operations manager finds there is no AI policy and staff keep asking what is allowed. She wants to help quickly without overstepping. How should she proceed?
+A. Announce a company AI rule on leadership’s behalf so staff have clarity.
+B. Tell staff to avoid AI entirely until a policy exists.
+C. Copy another company’s policy and circulate it as the chain’s own.
+D. Write a one-page interim proposal for the right owner to endorse.
+Correct Answer: Option D
+Explanation (Roman Urdu): Chapter kehta hai ke policy khud ijad karke official na banao; ek interim proposal likho (approved routes, data jin ke liye confirmation chahiye, human gate rule, naye Skills ka review, ek named contact) jise sahi owner endorse kare. A bina authority ke official rule announce karta hai. B kaam rok deta hai aur staff ko shadow AI ki taraf dhakelta hai. C doosre ki policy ko apni official bana kar chalana wahi ghalti hai.
+Yaad rakhne wala rule: Policy na ho to proposal likho, official ban kar announce mat karo.
+
+QUESTION 17 OF 20
+Chapter section: A.1 For managers: review quality
+In an insurance claims office, reviewers approved all 400 AI-drafted claim letters last month, spending about ten seconds on each, and none was rejected. The reviewers do not have the claim file open when they approve. What is the most appropriate next step?
+A. Examine review quality: whether reviewers have source material, time, a risk to look for and authority to reject.
+B. Add a second reviewer who will read the same letters the same way.
+C. Move to a monthly sample reviewed after the letters have gone out.
+D. Tell the reviewers to be more careful and keep the process the same.
+Correct Answer: Option A
+Explanation (Roman Urdu): 100% approval aur 10 second ka review batata hai ke gate shayad sirf click ban gaya hai, is liye review quality dekho: source material, waqt, specific risk aur reject karne ka ikhtiyar. B wahi kamzor review dohrata hai. C review ko bhejne ke baad le jata hai, jab ghalti wapas nahi hoti. D sirf ek nasihat hai, system ka masla hal nahi karti.
+Yaad rakhne wala rule: Approve ka click safety nahi; reviewer ke paas source, waqt aur reject ka ikhtiyar ho.
+
+QUESTION 18 OF 20
+Chapter section: 3.1 Internal does not mean vetted
+At a textile factory, HR wants to enable a Skill, built by another team in the same company last year, to format shift-roster files that include employee identifiers. HR does not know what the Skill accesses, and the policy has been updated since it was built. Which request is most appropriate?
+A. Enable it, because anything built internally has already been vetted.
+B. Enable it now and ask the other team about its access afterward.
+C. Confirm with the publisher what it accesses and why, and check its reach against current policy before enabling.
+D. Decline it for good, because internal Skills are never safe for HR data.
+Correct Answer: Option C
+Explanation (Roman Urdu): “Internal” ka matlab vetted nahi hota; us team ne apni suvidha ke liye broad reach di ho sakti hai ya purani policy ke mutabiq banaya ho. Enable karne se pehle publisher se access aur wajah confirm karo aur reach ko mojuda policy se milao. A internal ko vetted maan leta hai. B access pehle deta hai aur sawal baad mein poochta hai. D zarurat se zyada sakht hai aur chapter har internal Skill ko ghair-mehfooz nahi kehta.
+Yaad rakhne wala rule: Internal Skill bhi enable karne se pehle publisher se confirm karo.
+
+QUESTION 19 OF 20 SELECT TWO
+Chapter section: A.2 For agent builders: the four questions as architecture
+A warehouse e-commerce team’s Governance Record says a supervisor approves every refund before it is issued. The agent’s API token, however, can issue refunds directly. Which TWO changes best make the architecture match the record?
+A. Give the agent narrowly scoped credentials limited to reading orders and drafting refund requests.
+B. Add a line to the agent’s prompt asking it to wait for approval.
+C. Email supervisors monthly to remind them to watch the refund queue.
+D. Require supervisor confirmation in the system before the refund action can execute.
+Correct Answer: Option A and D
+Explanation (Roman Urdu): Agar token seedha refund de sakta hai to architecture ne policy ko overrule kar diya hai, is liye scoped credentials (A) aur consequential action par system-level confirmation (D) dono zaroori hain. B sirf ek wish hai jo token ki taqat ko nahi roakti. C ek reminder email hai, jo control nahi hai kyunke token phir bhi refund de sakta hai.
+Yaad rakhne wala rule: Policy ko architecture se enforce karo: narrow credentials aur confirmation.
+
+QUESTION 20 OF 20
+Chapter section: 4.3 Escalate the question, not a verdict
+A call-centre quality lead uses AI to rank the recorded calls of 600 agents across two countries, and the rankings feed performance reviews. She is unsure whether the law requires telling agents that AI is involved, which is outside her team’s standing to decide. Which escalation is most appropriate?
+A. “I think this is fine. Can you approve it?”
+B. Send legal all the call recordings and ask them to find any problems.
+C. Wait to see whether any agent complains before involving anyone.
+D. Send HR and legal the workflow, who is affected, the control added, and the specific disclosure question left open.
+Correct Answer: Option D
+Explanation (Roman Urdu): Yahan affected population bari hai, nuksan significant ho sakta hai aur sawal law ka hai, is liye escalate karo, aur strong escalation mein workflow, affected log, control aur wo khaas sawal hota hai jo framework hal nahi karta. A sirf approval maangta hai bina reviewer ko kuch specific decide karne ke liye diye. B reviewer par bojh dalta hai bina sawal bataye. C ghalat waqt par, nuksan hone ke baad react karta hai.
+Yaad rakhne wala rule: Verdict ke bajaye specific sawal escalate karo, apni reasoning ke saath.
+
+Q	Chapter section tested	Type
+1	1.3 Defined gate: who, what, when	Single
+2	2.2 Identifiers vs pattern (redaction)	Single
+3	2.2 Pseudonymized vs anonymized	Single
+4	3.1-3.2 Skill checks, enable/escalate/decline	Single
+5	1.2 Deciding factor	Single
+6	3.3 Read-only, least privilege	Single
+7	3.3 Trusted tool, untrusted content	Select two
+8	4.1 Sampling exclusions	Single
+9	4.2 Disclosure: rules first, judgment second	Single
+10	7 First-hour incident procedure	Single
+11	2.1 Red tier (licensed material)	Single
+12	2.5-2.6 Incognito vs authorization	Single
+13	4.2 AI notetaker	Select two
+14	8.3 Friction rule	Single
+15	8.5 Re-check triggers	Single
+16	8.4 No AI policy: interim proposal	Single
+17	A.1 Review quality	Single
+18	3.1 Internal does not mean vetted	Single
+19	A.2 Architecture must match the record	Select two
+20	4.3 Escalate the question	Single
+Questions to verify yourself:
+
+Count and numbering: your brief mixed 20 questions with “OF 12” and a 9-10 single / 2-3 select-two split. I used “OF 20” with 17 single and 3 select-two.
+Q5: the chapter says the human relationship “may be” the deciding factor for a condolence note. I built the scenario (no money, no legal claim) to point to it, but a reader could argue for accountability.
+Q7: option D (“mistakes can be fixed afterward”) rests on the chapter’s point that send actions should stay behind a human gate. It does not use a direct quote.
+Q12: option B is true on its own (incognito chats are not used for training on any plan). It is wrong only because it ignores the authorization question, so check you are happy with that trap.
+Q13: the chapter says some jurisdictions require everyone’s consent to a recording. I only tested “announce at the start” and did not claim a legal rule.
+Q16: the chapter’s performance-review worked example has a heading but no body text in the pasted chapter, so I did not use it.
+Chapter coverage: the chapter has no Project vs Skill vs Memory, five-component prompt, or context-overload content. I used its own frameworks instead, so those themes are absent.
+
+
+
+
+Claude is AI and can make mistakes.
